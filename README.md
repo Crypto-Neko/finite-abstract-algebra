@@ -7,3 +7,16 @@ Here begins my personal project to implement all abstract algebra in Python! The
 3. It will be fun!!
 
 I've chosen to make everything associative because I'd probably need to use a stack or something to implement non-associative algebra and that would be way too much work when what I care about is everything from groups upward, so I'm going to start with associative binary operations and then work my way up to fields etc. I'm mostly going to work with finite groups, but when moving to modules, FDVS, fields, etc. I will find a way to work with infinite objects.
+
+Here's a map of everything I've done so far:
+
+* Algebraic Structures
+  * bin_op.py -- Element, BinOp
+  * group.py -- Group
+* Geometry
+  * Symmetry Groups
+    * klein-4.py -- K: Klein-4 group
+  * Elliptic Curves
+* Number theory
+  * Number Groups
+    * Z2xZ2.py: Z2xZ2: The Cartesian product of Z2 with itself as a group
