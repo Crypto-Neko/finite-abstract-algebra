@@ -17,6 +17,10 @@ class Element():
     def __str__(self):
         return str(self.value)
 
+    def __eq__(self, other):
+        if isinstance(other, Element):
+            return self.value == other.value
+
     __repr__ = __str__
 
 

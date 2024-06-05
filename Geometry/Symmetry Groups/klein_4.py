@@ -1,4 +1,4 @@
-import sys; sys.path.append("../../Algebraic\ Structures")
+import sys; sys.path.append(r"../../Algebraic Structures")
 from bin_op import *
 from group import *
 
