@@ -6,10 +6,14 @@ class DefinitionError(Exception):
 
 
 ####################################################################################################################
-# Implements a Group object
-#
-#
-#
+# Implements a Group object, inheriting the methods and atributes of the BinOp class. Checks that the group has an #
+# identity and that every element has an inverse.                                                                  #
+#                                                                                                                  #
+# Group.is_commutative(): Returns True if the group is commutative, False otherwise.                               #
+# Group.is_isomorphis(other): Checks if the Group object is isomorphic to another, returning True/False.           #
+#                                                                                                                  #
+# Group.elements: The list of selements in the group.                                                              #
+# Group.table: The multiplication table of the group.                                                              #
 ####################################################################################################################
 class Group(BinOp):
     def __init__(self, elements, table):
@@ -41,7 +45,7 @@ class Group(BinOp):
             if identityExists != 1:
                 raise DefinitionError("Every element must have a unique inverse!")
 
-    # Checks if the group is commutative, returning True when it is and False otherwise.
+    # Checks if the Group is commutative, returning True when it is and False otherwise.
     def is_commutative(self):
         bad = 0
         i = 0
@@ -57,7 +61,7 @@ class Group(BinOp):
             return False
         return True
 
-    # Checks if two curves are isomorphic to one another, returning True if so and False otherwise.
+    # Checks if two Group objects are isomorphic to one another, returning True if so and False otherwise.
     def is_isomorphic(self, other):
         # Check that other is a group and that the cardinality is the same.
         if not isinstance(other, Group):
@@ -99,7 +103,3 @@ class Group(BinOp):
         if rowsAccountedFor == len(self.table):
             return True
         return False
-        
-
-    def __eq__(self, other):
-        return (self.elements == other.elements and self.table == other.table)

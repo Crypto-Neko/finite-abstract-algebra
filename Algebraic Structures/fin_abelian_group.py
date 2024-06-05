@@ -1,11 +1,18 @@
 from bin_op import *
 from group import *
 
-#######
-#
-#
-#
-#######
+####################################################################################################################
+# Implements a finite abelian group with an arbitrary number of generators. Constructs the FinAbGroup object with  #
+# inheritance from the Group class. Takes as input a list of the order of the generators for the group, e.g.       #
+# Z2xZ3 = FinAbGroup([2, 3]).                                                                                      #
+#                                                                                                                  #
+# FinAbGroup.construct_elements(tup, i): Recursively construct the tuple elements of the group in order of gens.   #
+# FinAbGroup.construct_table(): Construct the table from the list of elements.                                     #
+#                                                                                                                  #
+# FinAbgroup.generators: A list of the orders of the generators of the Group.                                      #
+# FinAbGroup.elements: The elements of the Group, represented with tuples as values.                               #
+# FinAbGroup.table: The multiplication table of the Group.                                                         #
+####################################################################################################################
 class FinAbGroup(Group):
     # Takes the list generators, containing the order of each generator.
     # Example: Z2 x Z6 = FinAbGroup([2, 6])

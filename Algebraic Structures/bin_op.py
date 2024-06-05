@@ -28,7 +28,7 @@ class Element():
 # Represents an associative binary operation, supporting multiplication with other elements of the set implemented #
 # through a list of elements and a multiplication table.                                                           #
 #                                                                                                                  #
-# BinOp.multiply: Multiply two elements of the sructure.                                                           #
+# BinOp.multiply(other): Multiply two elements of the sructure.                                                    #
 #                                                                                                                  #
 # BinOp.elements: A list containing the elements of the structure.                                                 #
 # BinOp.table: A table representing all possible pairs to multiply with the operation.                             #
