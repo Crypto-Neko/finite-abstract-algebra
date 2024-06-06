@@ -10,7 +10,7 @@ class DefinitionError(Exception):
 # identity and that every element has an inverse.                                                                  #
 #                                                                                                                  #
 # Group.is_commutative(): Returns True if the group is commutative, False otherwise.                               #
-# Group.is_isomorphis(other): Checks if the Group object is isomorphic to another, returning True/False.           #
+# Group.is_isomorphic(other): Checks if the Group object is isomorphic to another, returning True/False.           #
 #                                                                                                                  #
 # Group.elements: The list of selements in the group.                                                              #
 # Group.table: The multiplication table of the group.                                                              #
