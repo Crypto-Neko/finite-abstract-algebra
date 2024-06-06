@@ -62,7 +62,9 @@ class BinOp():
                     current+=1
 
                 return self.table[apos][bpos]
-
+            elif a not in self.elements or b not in self.elements:
+                raise ValueError("BinOp not defined for one or more Elements.")
+    
     def __str__(self):
         return str(self.elements)
 
