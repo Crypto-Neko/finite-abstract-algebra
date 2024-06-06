@@ -6,7 +6,7 @@
 # self.structure: The structure to which the element belongs, a BinOp object.                                      #
 ####################################################################################################################
 class Element():
-    def __init__(self, value, structure=0):
+    def __init__(self, value, structure=None):
         self.value = value
         self.structure = structure
 
